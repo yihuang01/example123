@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #2d4a2b;
+            /* Changed to dark green */
+            text-align: center;
+            padding-top: 50px;
+            color: #f0f0f0;
+            /* Added light text */
+        }
+
+        #message {
+            font-size: 1.3rem;
+            margin-top: 20px;
+            color: #90ee90;
+            /* Changed message color */
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            background: #4caf50;
+            /* Changed button color */
+            color: white;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #45a049;
+            /* Changed hover color */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Hello World!</h1>
+    <p id="message">Welcome to my HTML page.</p>
+
+    <button onclick="changeMessage()">Click Me</button>
+
+    <script>
+        function changeMessage() {
+            document.getElementById('message').textContent = "You clicked the button!";
+        }
+    </script>
+
+</body>
+
+</html>
